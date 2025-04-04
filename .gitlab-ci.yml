@@ -1,0 +1,12 @@
+include:
+  - project: "polymathrobotics/ci/ci_templates"
+    ref: main
+    file: "/ros/ros2_package.impl.yml"
+  - project: "polymathrobotics/ci/ci_templates"
+    ref: main
+    file: "/common/rules.yml"
+
+build_and_test_polymath_msgs:
+  variables:
+    PACKAGE_NAME: polymath_msgs
+  extends: .ros2_build_and_test
