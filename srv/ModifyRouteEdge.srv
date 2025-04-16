@@ -1,0 +1,26 @@
+## Request
+
+# Operation Types (enum)
+#
+# ADD: Add a new edge
+# DELETE: Remove an existing edge
+
+uint8 ADD=0
+uint8 DELETE=1
+
+# Define the type of operation (see options above)
+uint8 operation
+
+# Required. Details of the edge to modify
+polymath_msgs/RouteEdge edge
+---
+## Response
+
+# Indicate successful run of service
+bool success
+
+# 16-bit unique identification number of the edge
+uint16 edge_id
+
+# Error messages
+string message
