@@ -18,6 +18,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/FetchRouteNode.srv"
   "srv/EditRouteNode.srv"
   "srv/ModifyRouteEdge.srv"
+  "srv/ListRouteGraphs.srv"
   DEPENDENCIES std_msgs geometry_msgs
 )
 
