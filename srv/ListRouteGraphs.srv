@@ -1,0 +1,15 @@
+## Request
+
+# Required. UUID of the map corresponding to the route graph
+uint16 map_id
+---
+## Response
+
+# Indicate successful run of service
+bool success
+
+# List of names of all route-graphs
+string[] route_graphs_list
+
+# Error messages
+string message
