@@ -19,6 +19,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/EditRouteNode.srv"
   "srv/ModifyRouteEdge.srv"
   "srv/ListRouteGraphs.srv"
+  "srv/DeleteRouteGraph.srv"
   DEPENDENCIES std_msgs geometry_msgs
 )
 

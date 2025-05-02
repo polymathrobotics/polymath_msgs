@@ -1,0 +1,15 @@
+## Request
+
+# Required. UUID of the map corresponding to the route graph
+uint16 map_id
+
+# Required. Name of the route graph to be deleted
+string route_graph_name
+---
+## Response
+
+# Indicate successful run of service
+bool success
+
+# Error messages
+string message
