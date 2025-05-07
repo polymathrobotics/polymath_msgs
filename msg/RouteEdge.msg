@@ -1,9 +1,3 @@
-# ID of the map that the route belongs to
-uint16 map_id
-
-# Name of the route graph that the edge belongs to
-string route_graph_name
-
 # The starting node of the edge
 uint16 from_node_id
 

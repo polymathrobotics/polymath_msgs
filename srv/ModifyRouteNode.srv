@@ -2,11 +2,13 @@
 
 # Operation Types (enum)
 #
-# ADD: Add a new edge
-# DELETE: Remove an existing edge
+# ADD: Add a new node
+# DELETE: Remove an existing node
+# EDIT: Edit an existing node
 
 uint8 ADD=0
 uint8 DELETE=1
+uint8 EDIT=2
 
 # Define the type of operation (see options above)
 uint8 operation
@@ -17,16 +19,16 @@ uint16 map_id
 # Name of the route graph that the edge belongs to
 string route_graph_name
 
-# Required. Details of the edge to modify
-polymath_msgs/RouteEdge edge
+# Route node details
+polymath_msgs/RouteNode node
 ---
 ## Response
 
 # Indicate successful run of service
 bool success
 
-# 16-bit unique identification number of the edge
-uint16 edge_id
+# 16-bit unique identification number
+uint16 node_id
 
 # Error messages
 string message

@@ -1,8 +1,0 @@
-# Request
-uint16 map_uuid # Required
-string route_graph_name # Required
-uint16 node_uuid # Required
----
-# Response
-bool success # Indicate successful run of service
-string message # Error messages

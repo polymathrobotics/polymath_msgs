@@ -1,10 +1,24 @@
-# Request
-uint16 map_uuid # Required
-string route_graph_name # Required
-uint16 node_uuid # Required
+## Request
+
+# ID of the map that the route belongs to
+uint16 map_id
+
+# Name of the route graph that the edge belongs to
+string route_graph_name
+
+# Required. UUID of the route node
+uint16 node_id
+
+# Optional (Not implemented), name of the route node
+string node_name
 ---
-# Response
-bool success # Indicate successful run of service
-geometry_msgs/Pose route_node_pose
-string route_node_name
-string message # Error messages
+## Response
+
+# Indicate successful run of service
+bool success
+
+# Route node details
+polymath_msgs/RouteNode node
+
+# Error messages
+string message
