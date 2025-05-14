@@ -14,11 +14,12 @@ find_package(geometry_msgs REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/RouteNode.msg"
   "msg/RouteEdge.msg"
+  "msg/Route.msg"
   "srv/FetchRouteNode.srv"
   "srv/ModifyRouteNode.srv"
   "srv/ModifyRouteEdge.srv"
   "srv/ListRouteGraphs.srv"
-  "srv/DeleteRouteGraph.srv"
+  "srv/ManageRouteGraph.srv"
   DEPENDENCIES std_msgs geometry_msgs
 )
 
