@@ -1,0 +1,31 @@
+## Request
+
+# Operation Types (enum)
+#
+# FETCH: Get details of a route graph
+# LOAD: Load a route graph for navigation
+# DELETE: Remove a saved route graph
+
+uint8 FETCH=0
+uint8 LOAD=1
+uint8 DELETE=2
+
+# Define the type of operation (see options above)
+uint8 operation
+
+# ID of the map that the route belongs to
+uint16 map_id
+
+# Name of the route graph
+string route_graph_name
+---
+## Response
+
+# Indicate successful run of service
+bool success
+
+# Route graph details, for FETCH operation
+polymath_msgs/Route route_graph
+
+# Error messages
+string message
