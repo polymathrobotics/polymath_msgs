@@ -8,8 +8,8 @@ Changelog for package polymath_msgs
   See merge request `polymathrobotics/polymath_msgs!5 <https://gitlab.com/polymathrobotics/polymath_msgs/-/merge_requests/5>`_
 * Contributors: Dhruv Tyagi
 
-Forthcoming
------------
+0.0.2 (2025-05-22)
+------------------
 * Interface for adding route graphs
   See merge request `polymathrobotics/polymath_msgs!8 <https://gitlab.com/polymathrobotics/polymath_msgs/-/merge_requests/8>`_
 * Add release tag
