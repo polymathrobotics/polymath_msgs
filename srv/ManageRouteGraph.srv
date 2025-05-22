@@ -3,12 +3,14 @@
 # Operation Types (enum)
 #
 # FETCH: Get details of a route graph
+# ADD: Add full route graph
 # LOAD: Load a route graph for navigation
 # DELETE: Remove a saved route graph
 
 uint8 FETCH=0
-uint8 LOAD=1
-uint8 DELETE=2
+uint8 ADD=1
+uint8 LOAD=2
+uint8 DELETE=3
 
 # Define the type of operation (see options above)
 uint8 operation
@@ -18,6 +20,9 @@ uint16 map_id
 
 # Name of the route graph
 string route_graph_name
+
+# Route graph details, for ADD operation
+polymath_msgs/Route route_graph
 ---
 ## Response
 
