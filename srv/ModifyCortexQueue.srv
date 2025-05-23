@@ -1,0 +1,28 @@
+# ModifyCortexQueue
+
+# Modification Mode (Enum)
+#
+# ADD: Add to the current queue
+# PREEMPT (unimplemented): Deletes the current queue and preempts to new command
+# CLEAR: (unimplemented): clears the active queue
+# INSERT: (unimplemented): inserts into the queue
+uint8 ADD=0
+uint8 PREEMPT=1
+uint8 CLEAR=2
+uint8 INSERT=3
+
+# Queue Modification Mode
+# (See available options above)
+#
+# default: ADD. Command will not do anything unless explicitly set.
+uint8 mode
+
+# UNUSED. Placeholder for "insert" mode
+uint16 option
+
+# Cortex Command(s) array
+polymath_msgs/CortexCommand[] commands
+
+---
+bool success
+string message

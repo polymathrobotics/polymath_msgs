@@ -1,0 +1,4 @@
+---
+# list of vehicle command options
+# Result can be a template for what is sent in the VehicleCommand
+polymath_msgs/Option[] command_options

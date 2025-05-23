@@ -1,0 +1,4 @@
+
+---
+# List of available navigation options
+polymath_msgs/Option[] pathing_options
