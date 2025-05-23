@@ -31,8 +31,8 @@ Changelog for package polymath_msgs
   See merge request `polymathrobotics/polymath_msgs!7 <https://gitlab.com/polymathrobotics/polymath_msgs/-/merge_requests/7>`_
 * Contributors: Dhruv Tyagi
 
-Forthcoming
------------
+0.2.0 (2025-05-23)
+------------------
 * Move cortex_msgs
   See merge request `polymathrobotics/polymath_msgs!10 <https://gitlab.com/polymathrobotics/polymath_msgs/-/merge_requests/10>`_
 * Prepare repo for public release
