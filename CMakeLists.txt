@@ -10,8 +10,36 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(builtin_interfaces REQUIRED)
+find_package(actionlib_msgs REQUIRED)
+find_package(action_msgs REQUIRED)
+find_package(geographic_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
+
+set(dependencies
+  std_msgs
+  builtin_interfaces
+  actionlib_msgs
+  geometry_msgs
+  nav_msgs
+  geographic_msgs
+  action_msgs
+)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/Option.msg"
+  "msg/KeyValue.msg"
+  "msg/VehicleFeedback.msg"
+  "msg/NavigationOptions.msg"
+  "msg/VehicleCommand.msg"
+  "msg/CortexStatus.msg"
+  "msg/FlowCommand.msg"
+  "msg/ReferenceTarget.msg"
+  "msg/NavigationCommand.msg"
+  "msg/NavigationFeedback.msg"
+  "msg/CortexCommand.msg"
+  "msg/CortexFeedback.msg"
+  "msg/RouteNavGoal.msg"
   "msg/RouteNode.msg"
   "msg/RouteEdge.msg"
   "msg/Route.msg"
@@ -20,12 +48,13 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ModifyRouteEdge.srv"
   "srv/ListRouteGraphs.srv"
   "srv/ManageRouteGraph.srv"
-  DEPENDENCIES std_msgs geometry_msgs
+  "srv/CommandCortexFlow.srv"
+  "srv/ModifyCortexQueue.srv"
+  "srv/ListVehicleOptions.srv"
+  "srv/ListPathLogicOptions.srv"
+  "srv/ListReferenceTargets.srv"
+  DEPENDENCIES ${dependencies}
 )
 
-if(BUILD_TESTING)
-  find_package(ament_lint_auto REQUIRED)
-  ament_lint_auto_find_test_dependencies()
-endif()
-
+install(DIRECTORY msg srv DESTINATION share/${PROJECT_NAME})
 ament_package()

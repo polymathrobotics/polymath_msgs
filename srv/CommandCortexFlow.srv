@@ -1,0 +1,6 @@
+# Cortex Flow (change name?)
+# Command allowing pause, resume and stop
+polymath_msgs/FlowCommand command
+---
+bool success
+string message
