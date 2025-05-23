@@ -5,7 +5,7 @@
   <version>0.0.2</version>
   <description>Interface definitions for customer applications to communicate with Polymath Autonomy Software</description>
   <maintainer email="dhruv@polymathrobotics.com">Dhruv Tyagi</maintainer>
-  <license>Proprietary</license>
+  <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
