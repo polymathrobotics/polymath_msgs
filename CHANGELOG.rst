@@ -31,8 +31,8 @@ Changelog for package polymath_msgs
   See merge request `polymathrobotics/polymath_msgs!7 <https://gitlab.com/polymathrobotics/polymath_msgs/-/merge_requests/7>`_
 * Contributors: Dhruv Tyagi
 
-Forthcoming
------------
+0.3.0 (2025-06-03)
+------------------
 * Merge branch 'main' into dtyagi/add-fetching-route-node-by-name
 * Remove gitlab CI and add action-ros-ci (`#1 <https://gitlab.com/polymathrobotics/polymath_msgs/-/issues/1>`_)
 * Contributors: Dhruv Tyagi, Emerson Knapp
