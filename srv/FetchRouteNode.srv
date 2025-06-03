@@ -6,10 +6,23 @@ uint16 map_id
 # Name of the route graph that the edge belongs to
 string route_graph_name
 
-# Required. UUID of the route node
+# Request Type (Enum)
+#
+# ID: Request fetch by ID
+# NAME: Request fetch by name
+uint8 ID=0
+uint8 NAME=1
+
+# Fetch request type
+# (See available options above)
+#
+# default: ID
+uint8 request_type
+
+# Required if request_type=ID. UUID of the route node
 uint16 node_id
 
-# Optional (Not implemented), name of the route node
+# Required if request_type=NAME. Name of the route node
 string node_name
 ---
 ## Response
