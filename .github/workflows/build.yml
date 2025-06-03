@@ -19,9 +19,10 @@ jobs:
       image: polymathrobotics/ros:${{ matrix.ros }}-builder-ubuntu
     steps:
       - uses: actions/checkout@v4
-      - uses: ros-tooling/action-ros-ci@v0.3
+      - uses: ros-tooling/action-ros-ci@v0.4
         with:
           target-ros2-distro: ${{ matrix.ros }}
+          coverage-result: false
       - uses: actions/upload-artifact@v4
         with:
           name: colcon-logs-${{ matrix.ros }}
