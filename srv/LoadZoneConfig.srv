@@ -1,0 +1,12 @@
+## Request
+
+# Zone config name
+string config_name
+---
+## Response
+
+# Indicate successful run of service
+bool success
+
+# Error messages
+string message
