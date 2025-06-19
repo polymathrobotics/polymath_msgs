@@ -1,0 +1,17 @@
+## Request
+
+# Zone name
+string zone_name
+
+## Requested state
+# True: Enable zone
+# False: Disable zone
+bool toggle_state
+---
+## Response
+
+# Indicate successful run of service
+bool success
+
+# Error messages
+string message

@@ -52,6 +52,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ListPathLogicOptions.srv"
   "srv/ListReferenceTargets.srv"
   "srv/LoadZoneConfig.srv"
+  "srv/ToggleZone.srv"
   DEPENDENCIES ${dependencies}
 )
 
