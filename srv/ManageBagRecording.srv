@@ -1,0 +1,35 @@
+## Request
+
+# Operation types (enum)
+#
+# STOP: Stop bag recording
+# START: Start bag recording
+uint8 STOP=0
+uint8 START=1
+
+# Define the type of operation (see options above) (required)
+uint8 operation
+
+# Bag file name (recommended)
+string bag_name
+
+# The following fields will be checked for data in-order (opyional)
+string[] include_topics
+string[] exclude_topics
+string topic_profile
+
+# Record for pre-set time duration in seconds (optional)
+# Default 0: record until manually stopped
+uint8 record_duration
+
+---
+## Response
+
+# Indicate successful run of service
+bool success
+
+# Bag file name
+string bag_name
+
+# Error messages
+string message
