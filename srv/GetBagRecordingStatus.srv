@@ -1,0 +1,24 @@
+## Request
+
+# Bag file name (not yet implemented, included for future use)
+string bag_name
+---
+## Response
+
+# Indicate successful run of service
+bool success
+
+# Error messages
+string message
+
+# Current recording status
+bool is_recording
+
+# Name of the currently recording bag file (empty if not recording)
+string bag_name
+
+# Time elapsed since the start of current recording in seconds (0 if not recording)
+uint16 time_elapsed
+
+# List of topics being recorded
+string recorded_topics

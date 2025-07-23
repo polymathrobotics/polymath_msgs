@@ -51,7 +51,9 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ListVehicleOptions.srv"
   "srv/ListPathLogicOptions.srv"
   "srv/ListReferenceTargets.srv"
-  "srv/ManageBagRecording.srv"
+  "srv/StartBagRecording.srv"
+  "srv/StopBagRecording.srv"
+  "srv/GetBagRecordingStatus.srv"
   DEPENDENCIES ${dependencies}
 )
 

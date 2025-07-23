@@ -1,15 +1,5 @@
 ## Request
 
-# Operation types (enum)
-#
-# STOP: Stop bag recording
-# START: Start bag recording
-uint8 STOP=0
-uint8 START=1
-
-# Define the type of operation (see options above) (required)
-uint8 operation
-
 # Bag file name (recommended)
 string bag_name
 
@@ -28,8 +18,6 @@ uint8 record_duration
 # Indicate successful run of service
 bool success
 
-# Bag file name
-string bag_name
-
-# Error messages
+# If success is true, message will contain bag file name
+# If success is false, message will contain error messages
 string message
