@@ -1,11 +1,11 @@
 ## Request
 
-# Bag file name (recommended)
-string bag_name
+# Bag file suffix (optional, recommended)
+string bag_suffix
 
 # The following fields will be checked for data in-order (optional)
 string[] include_topics
-string[] exclude_topics # Not implemented
+string[] exclude_topics
 string topic_profile
 
 # Record for pre-set time duration in seconds (optional)
