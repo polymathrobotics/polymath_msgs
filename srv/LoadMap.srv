@@ -1,0 +1,30 @@
+## Request
+
+# Load Request Types (enum)
+#
+# BY_ID: Load map by ID
+# BY_NAME: Load map by Name
+
+uint8 BY_ID=0
+uint8 BY_NAME=1
+
+# Type of request (see options above)
+uint8 load_request_type
+
+# Requested map's ID, if using BY_ID
+uint16 map_id
+
+# Requested map's name, if using BY_NAME
+string map_name
+
+# Initial pose for localization (Not implemented currently)
+geometry_msgs/PoseWithCovarianceStamped initial_pose
+
+---
+## Response
+
+# Indicate successful run of service
+bool success
+
+# Error messages
+string message
