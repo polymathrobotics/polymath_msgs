@@ -6,5 +6,6 @@
 # Indicate successful run of service
 bool success
 
-# Error messages
+# If success is true, message will contain bag file name
+# If success is false, message will contain error messages
 string message
