@@ -18,5 +18,5 @@ string bag_name
 # Time elapsed since the start of current recording in seconds (0 if not recording)
 uint16 time_elapsed
 
-# List of topics being recorded
+# List of topics included/excluded in the current recording
 string recorded_topics
