@@ -1,0 +1,25 @@
+## Request
+
+# Bag file suffix (optional, recommended)
+string bag_suffix
+
+# The following fields will be checked for data in-order (optional)
+string[] include_topics
+string[] exclude_topics
+string topic_profile
+
+# Record for pre-set time duration in seconds (optional)
+# Default 0: record until manually stopped or max time limit reached
+uint8 record_duration
+
+---
+## Response
+
+# Indicate successful run of service
+bool success
+
+# Bag file name (excluding path)
+string bag_name
+
+# Error messages
+string error

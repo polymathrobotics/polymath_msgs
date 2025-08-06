@@ -53,9 +53,11 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ListVehicleOptions.srv"
   "srv/ListPathLogicOptions.srv"
   "srv/ListReferenceTargets.srv"
-  "srv/ManageMapDataRecording.srv"
   "srv/GenerateOfflineMap.srv"
   "srv/LoadMap.srv"
+  "srv/StartBagRecording.srv"
+  "srv/StopBagRecording.srv"
+  "srv/GetBagRecordingStatus.srv"
   DEPENDENCIES ${dependencies}
 )
 
