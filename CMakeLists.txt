@@ -55,6 +55,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ListReferenceTargets.srv"
   "srv/GenerateOfflineMap.srv"
   "srv/LoadMap.srv"
+  "srv/ManageMapDataRecording.srv"
   "srv/StartBagRecording.srv"
   "srv/StopBagRecording.srv"
   "srv/GetBagRecordingStatus.srv"
