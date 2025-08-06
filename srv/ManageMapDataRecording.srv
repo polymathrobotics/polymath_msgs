@@ -1,0 +1,26 @@
+## Request
+
+# Request Type (Enum)
+#
+# STOP: Stop recording map data
+# START: Start recording map data
+
+uint8 STOP=0
+uint8 START=1
+
+# Recording request type
+# (See available options above)
+#
+# default: STOP
+uint8 request_type
+---
+## Response
+
+# Indicate successful run of service
+bool success
+
+# Data file name
+string file_name
+
+# Error messages
+string message
