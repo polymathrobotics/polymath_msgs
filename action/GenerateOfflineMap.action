@@ -1,0 +1,23 @@
+## Request
+
+# Name of the bag / data source (Required)
+string data_source
+
+# Name of the map (Recommended: default name - timestamp)
+string map_name
+---
+## Response
+
+# Indicate successful run of service
+bool success
+
+# 16-bit unique identification number
+uint16 map_id
+
+# Error messages
+string error
+---
+## Feedback
+
+# Indicate if the map generation is currently in progress
+bool is_generating

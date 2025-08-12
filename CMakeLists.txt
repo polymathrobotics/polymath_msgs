@@ -59,6 +59,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/StartBagRecording.srv"
   "srv/StopBagRecording.srv"
   "srv/GetBagRecordingStatus.srv"
+  "action/GenerateOfflineMap.action"
   DEPENDENCIES ${dependencies}
 )
 
