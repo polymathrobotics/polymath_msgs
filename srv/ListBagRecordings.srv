@@ -1,0 +1,13 @@
+## Request
+
+---
+## Response
+
+# Indicate successful run of service
+bool success
+
+# Bag file names (excluding path)
+BagRecording[] bag_recordings
+
+# Error messages
+string error
