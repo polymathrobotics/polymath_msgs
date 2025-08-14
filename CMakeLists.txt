@@ -32,6 +32,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/VehicleCommand.msg"
   "msg/CortexStatus.msg"
   "msg/FlowCommand.msg"
+  "msg/BagRecording.msg"
   "msg/ReferenceTarget.msg"
   "msg/NavigationCommand.msg"
   "msg/NavigationFeedback.msg"
@@ -59,6 +60,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/StartBagRecording.srv"
   "srv/StopBagRecording.srv"
   "srv/GetBagRecordingStatus.srv"
+  "srv/ListBagRecordings.srv"
   DEPENDENCIES ${dependencies}
 )
 
