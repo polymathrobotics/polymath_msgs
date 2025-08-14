@@ -1,4 +1,3 @@
 string bag_name
-int size_mb
+uint8 size_mb
 string[] files
-
