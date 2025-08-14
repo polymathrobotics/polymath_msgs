@@ -15,4 +15,9 @@ bool success
 uint16 map_id
 
 # Error messages
-string message
+string error
+---
+## Feedback
+
+# Indicate if the map generation is currently in progress
+bool is_generating
