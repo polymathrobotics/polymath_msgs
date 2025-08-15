@@ -33,6 +33,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/CortexStatus.msg"
   "msg/FlowCommand.msg"
   "msg/BagRecording.msg"
+  "msg/BagRecordingStatus.msg"
   "msg/ReferenceTarget.msg"
   "msg/NavigationCommand.msg"
   "msg/NavigationFeedback.msg"
