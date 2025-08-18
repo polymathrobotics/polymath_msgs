@@ -45,6 +45,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Route.msg"
   "msg/HttpRequest.msg"
   "msg/HttpResponse.msg"
+  "msg/MapIdNamePair.msg"
   "srv/FetchRouteNode.srv"
   "srv/ModifyRouteNode.srv"
   "srv/ModifyRouteEdge.srv"
@@ -60,6 +61,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/StopBagRecording.srv"
   "srv/GetBagRecordingStatus.srv"
   "srv/ListBagRecordings.srv"
+  "srv/ListMaps.srv"
   "action/GenerateOfflineMap.action"
   DEPENDENCIES ${dependencies}
 )
