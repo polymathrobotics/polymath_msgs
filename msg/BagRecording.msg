@@ -1,3 +1,3 @@
 string bag_name
-uint8 size_mb
+uint64 size_bytes
 string[] files
