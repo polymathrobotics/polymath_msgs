@@ -1,0 +1,27 @@
+## Request
+
+# Delete Request Types (enum)
+#
+# BY_ID: Delete map by ID
+# BY_NAME: Delete map by Name
+
+uint8 BY_ID=0
+uint8 BY_NAME=1
+
+# Type of request (see options above)
+uint8 delete_request_type
+
+# Requested map's ID, if using BY_ID
+uint16 map_id
+
+# Requested map's name, if using BY_NAME
+string map_name
+
+---
+## Response
+
+# Indicate successful run of service
+bool success
+
+# Error messages
+string error
