@@ -10,7 +10,7 @@ string topic_profile
 
 # Record for pre-set time duration in seconds (optional)
 # Default 0: record until manually stopped or max time limit reached
-uint8 record_duration
+uint32 record_duration
 
 ---
 ## Response
