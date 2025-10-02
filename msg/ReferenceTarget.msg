@@ -1,4 +1,6 @@
 # PoseStamped data for reference target pose
+float32 NO_SPEED_MEASUREMENT = -999.0
+
 geographic_msgs/GeoPoseStamped pose
 
 # Linear speed in m/s
