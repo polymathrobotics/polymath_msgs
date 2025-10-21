@@ -3,10 +3,12 @@
 # GEO_PATH: Geo Path Command type
 # RELATIVE_PATH: Relative Path Command type
 # ROUTE_PATH: Route Navigation Path Command Type
+# COVERAGE_PATH: Coverage Navigation Path Command Type
 
 uint8 GEO_PATH=0
 uint8 RELATIVE_PATH=1
 uint8 ROUTE_PATH=2
+uint8 COVERAGE_PATH=3
 
 # Navigation Command Type
 # (See available options above)
@@ -29,3 +31,6 @@ nav_msgs/Path relative_path
 
 # For route server navigation
 polymath_msgs/RouteNavGoal route_path
+
+# For coverage navigation
+opennav_coverage_msgs/NavigateCompleteCoverageGoal coverage_path
