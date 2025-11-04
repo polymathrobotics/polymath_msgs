@@ -10,6 +10,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 find_package(action_msgs REQUIRED)
 find_package(geographic_msgs REQUIRED)
@@ -19,6 +20,7 @@ set(dependencies
   std_msgs
   builtin_interfaces
   geometry_msgs
+  sensor_msgs
   nav_msgs
   geographic_msgs
   action_msgs
@@ -46,6 +48,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/HttpRequest.msg"
   "msg/HttpResponse.msg"
   "msg/MapIdNamePair.msg"
+  "msg/GeoBoundary.msg"
   "srv/FetchRouteNode.srv"
   "srv/ModifyRouteNode.srv"
   "srv/ModifyRouteEdge.srv"
