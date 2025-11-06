@@ -46,6 +46,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/HttpRequest.msg"
   "msg/HttpResponse.msg"
   "msg/MapIdNamePair.msg"
+  "msg/DateTime.msg"
   "srv/FetchRouteNode.srv"
   "srv/ModifyRouteNode.srv"
   "srv/ModifyRouteEdge.srv"
@@ -67,6 +68,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/StopBagRetention.srv"
   "srv/ListContinuousRecordings.srv"
   "srv/DeleteContinuousRecording.srv"
+  "srv/RetainRecording.srv"
   "action/GenerateOfflineMap.action"
   DEPENDENCIES ${dependencies}
 )
