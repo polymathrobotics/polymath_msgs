@@ -1,10 +1,10 @@
 ## Request
 
 # Start time for retention
-polymath_msgs/DateTime start_time
+builtin_interfaces/Time start_time
 
 # End time for retention
-polymath_msgs/DateTime end_time
+builtin_interfaces/Time end_time
 
 # Session suffix (optional, recommended)
 string session_suffix
