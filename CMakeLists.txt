@@ -47,6 +47,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/HttpResponse.msg"
   "msg/MapIdNamePair.msg"
   "msg/DateTime.msg"
+  "msg/StorageStatus.msg"
   "srv/FetchRouteNode.srv"
   "srv/ModifyRouteNode.srv"
   "srv/ModifyRouteEdge.srv"

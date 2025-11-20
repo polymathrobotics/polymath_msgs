@@ -1,0 +1,4 @@
+bool is_storage_available
+uint64 bags_dir_size_bytes
+uint64 available_disk_space_bytes
+builtin_interfaces/Time last_sweep_time
