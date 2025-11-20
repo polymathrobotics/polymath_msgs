@@ -66,7 +66,6 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/DeleteMap.srv"
   "srv/ListMaps.srv"
   "srv/StartBagRetention.srv"
-  "srv/StopBagRetention.srv"
   "srv/ListContinuousRecordings.srv"
   "srv/DeleteContinuousRecording.srv"
   "srv/RetainRecording.srv"
