@@ -67,10 +67,10 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ListBagRecordings.srv"
   "srv/DeleteMap.srv"
   "srv/ListMaps.srv"
-  "srv/StartBagRetention.srv"
-  "srv/ListContinuousRecordings.srv"
-  "srv/DeleteContinuousRecording.srv"
-  "srv/RetainRecording.srv"
+  "srv/StorageStartSession.srv"
+  "srv/StorageStopSession.srv"
+  "srv/StorageRemoveSession.srv"
+  "srv/StorageSaveSession.srv"
   "action/GenerateOfflineMap.action"
   DEPENDENCIES ${dependencies}
 )
