@@ -48,13 +48,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/HttpRequest.msg"
   "msg/HttpResponse.msg"
   "msg/MapIdNamePair.msg"
-<<<<<<< HEAD
-  "msg/DateTime.msg"
-  "msg/ContinuousRecordingStatus.msg"
-=======
   "msg/GeoBoundary.msg"
   "msg/StorageSummary.msg"
->>>>>>> e166cc2c551ac698d6e5e78f36479482c84de5a7
   "srv/FetchRouteNode.srv"
   "srv/ModifyRouteNode.srv"
   "srv/ModifyRouteEdge.srv"
