@@ -1,4 +1,8 @@
 ## Request
+
+# File/session name
+string name
+
 ---
 ## Response
 
