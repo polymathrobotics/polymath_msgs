@@ -49,6 +49,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/HttpResponse.msg"
   "msg/MapIdNamePair.msg"
   "msg/GeoBoundary.msg"
+  "msg/StorageSummary.msg"
   "srv/FetchRouteNode.srv"
   "srv/ModifyRouteNode.srv"
   "srv/ModifyRouteEdge.srv"
@@ -66,6 +67,10 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ListBagRecordings.srv"
   "srv/DeleteMap.srv"
   "srv/ListMaps.srv"
+  "srv/StorageStartSession.srv"
+  "srv/StorageStopSession.srv"
+  "srv/StorageRemoveSession.srv"
+  "srv/StorageSaveSession.srv"
   "action/GenerateOfflineMap.action"
   DEPENDENCIES ${dependencies}
 )

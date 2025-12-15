@@ -1,0 +1,13 @@
+## Request
+
+# File/session name
+string name
+
+---
+## Response
+
+# Indicate successful run of service
+bool success
+
+# Error messages
+string error
