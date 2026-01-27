@@ -1,4 +1,4 @@
 # polymath_msgs/KeyValue
-builtin_interfaces/msg/Time timestamp
+builtin_interfaces/Time timestamp
 string key
 string value
