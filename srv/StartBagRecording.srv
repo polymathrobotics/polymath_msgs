@@ -4,9 +4,10 @@
 string bag_suffix
 
 # The following fields will be checked for data in-order (optional)
-string[] include_topics
-string[] exclude_topics
-string topic_profile
+string[] include # Topics to include in the bag file - matched exactly
+string[] include_regex # Topics to include in the bag file - matched using regex
+string[] exclude_regex # Topics to exclude from the bag file - matched using regex
+string topic_profile # Topic profile to use for recording
 
 # Record for pre-set time duration in seconds (optional)
 # Default 0: record until manually stopped or max time limit reached
