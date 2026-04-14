@@ -1,0 +1,27 @@
+## Request
+# Commands for a specific joint, assumes it will get to what you target async
+# If you want to use a command, set the value to something other than UNUSED
+# Only one command type will be used, priority is position, then velocity, then effort. If you set more than one, the priority will be used to determine which one is used.
+
+float64 UNUSED=-999999
+
+# Target position for the joint command
+float64 target_position -999999
+
+# Target velocity for the joint command
+float64 target_velocity -999999
+
+# Target effort for the joint command
+float64 target_effort -999999
+
+# Timeout for the command being sent
+uint32 tiemout_ms 5000
+
+---
+## Response
+
+# Indicate successful run of service
+bool success
+
+# Error messages
+string error
