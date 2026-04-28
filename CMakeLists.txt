@@ -71,6 +71,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/StorageStopSession.srv"
   "srv/StorageRemoveSession.srv"
   "srv/StorageSaveSession.srv"
+  "srv/VehicleJointCommand.srv"
   "action/GenerateOfflineMap.action"
   DEPENDENCIES ${dependencies}
 )
