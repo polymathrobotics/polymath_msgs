@@ -1,0 +1,12 @@
+## Request
+
+# File name of the zone configuration to load (without extension)
+string config_name
+---
+## Response
+
+# Indicate successful run of service
+bool success
+
+# Error messages
+string message
