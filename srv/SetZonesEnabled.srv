@@ -1,0 +1,16 @@
+## Request
+
+# List of zone names to enable
+string[] enable_zones
+
+# List of zone names to disable
+string[] disable_zones
+
+---
+## Response
+
+# Indicate successful run of service
+bool success
+
+# Error messages
+string message

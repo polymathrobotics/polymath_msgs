@@ -50,6 +50,9 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/MapIdNamePair.msg"
   "msg/GeoBoundary.msg"
   "msg/StorageSummary.msg"
+  "msg/ZoneConditionInfo.msg"
+  "msg/ZoneInfo.msg"
+  "msg/ZoneConfig.msg"
   "srv/FetchRouteNode.srv"
   "srv/ModifyRouteNode.srv"
   "srv/ModifyRouteEdge.srv"
@@ -72,6 +75,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/StorageRemoveSession.srv"
   "srv/StorageSaveSession.srv"
   "srv/LoadZoneConfig.srv"
+  "srv/SetZonesEnabled.srv"
   "action/GenerateOfflineMap.action"
   DEPENDENCIES ${dependencies}
 )
