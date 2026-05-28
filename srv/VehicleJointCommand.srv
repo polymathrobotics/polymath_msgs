@@ -15,7 +15,7 @@ float64 target_velocity -999999
 float64 target_effort -999999
 
 # Timeout for the command being sent
-uint32 tiemout_ms 5000
+uint32 timeout_ms 5000
 
 ---
 ## Response
