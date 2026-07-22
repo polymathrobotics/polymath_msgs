@@ -15,6 +15,7 @@ find_package(builtin_interfaces REQUIRED)
 find_package(action_msgs REQUIRED)
 find_package(geographic_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
+find_package(ros2_medkit_msgs REQUIRED)
 
 set(dependencies
   std_msgs
@@ -24,6 +25,7 @@ set(dependencies
   nav_msgs
   geographic_msgs
   action_msgs
+  ros2_medkit_msgs
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
@@ -32,6 +34,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/CortexFeedback.msg"
   "msg/CortexStatus.msg"
   "msg/FlowCommand.msg"
+  "msg/HealthSummary.msg"
   "msg/HttpRequest.msg"
   "msg/HttpResponse.msg"
   "msg/KeyValue.msg"
@@ -41,6 +44,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Option.msg"
   "msg/ReferenceTarget.msg"
   "msg/RouteNavGoal.msg"
+  "msg/SubsystemHealth.msg"
   "msg/VehicleCommand.msg"
   "msg/VehicleFeedback.msg"
 
