@@ -8,15 +8,8 @@ string name
 # Derived subsystem state: OK < WARN < DEGRADED < CRITICAL (worst active fault).
 string state
 
-# Severity of the worst active fault (use SEVERITY_* constants below, which mirror
-# ros2_medkit_msgs/msg/Fault).
+# Severity of the worst active fault (ros2_medkit_msgs/msg/Fault SEVERITY_* values).
 uint8 severity
 
-# fault_codes of the active faults attributed to this subsystem.
-string[] active_alert_ids
-
-# Severity level constants (mirror ros2_medkit_msgs/msg/Fault SEVERITY_*).
-uint8 SEVERITY_INFO = 0
-uint8 SEVERITY_WARN = 1
-uint8 SEVERITY_ERROR = 2
-uint8 SEVERITY_CRITICAL = 3
+# Individual active faults (verbatim from the fault manager), worst-first then by fault_code.
+ros2_medkit_msgs/Fault[] faults
