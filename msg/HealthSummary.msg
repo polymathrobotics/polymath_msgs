@@ -5,18 +5,15 @@
 builtin_interfaces/Time timestamp
 
 # False when the fault source (fault manager) could not be reached; in that case
-# state is "UNKNOWN" and the subsystems/fault arrays are empty.
+# the subsystems/fault arrays are empty.
 bool fault_source_available
 
-# Overall derived state: OK < WARN < DEGRADED < CRITICAL (or "UNKNOWN").
-string state
-
-# Templated, human-readable one-line summary of the overall state.
+# Templated, human-readable one-line summary of the overall health.
 string summary
 
 # Severity of the worst active fault (ros2_medkit_msgs/msg/Fault SEVERITY_* values).
 # Defaults to SEVERITY_INFO when there are no active faults or the fault source is
-# unavailable; use fault_source_available / state to disambiguate.
+# unavailable; use fault_source_available to disambiguate.
 uint8 highest_severity
 
 # fault_code of the worst active fault; empty when there are no active faults.

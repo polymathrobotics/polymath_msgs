@@ -5,9 +5,6 @@
 # Subsystem name (e.g. "localization", "compute", "uncategorized").
 string name
 
-# Derived subsystem state: OK < WARN < DEGRADED < CRITICAL (worst active fault).
-string state
-
 # Severity of the worst active fault (ros2_medkit_msgs/msg/Fault SEVERITY_* values).
 uint8 severity
 
