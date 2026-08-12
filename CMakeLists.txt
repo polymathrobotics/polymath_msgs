@@ -54,7 +54,6 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ListReferenceTargets.srv"
   "srv/ListVehicleOptions.srv"
   "srv/ModifyCortexQueue.srv"
-  "srv/VehicleJointCommand.srv"
   DEPENDENCIES ${dependencies}
 )
 
