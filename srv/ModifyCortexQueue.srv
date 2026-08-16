@@ -26,3 +26,8 @@ polymath_msgs/CortexCommand[] commands
 ---
 bool success
 string message
+
+# Cortex-assigned ids, aligned 1:1 with request.commands and in the same order.
+# Each is the goal id for the corresponding command. Empty when the request was
+# rejected (success is false).
+unique_identifier_msgs/UUID[] command_ids
