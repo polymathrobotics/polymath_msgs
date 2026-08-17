@@ -1,0 +1,17 @@
+# QueryCortexQueue
+#
+# Returns a snapshot of the live command queue plus the currently active command.
+
+---
+bool success
+string message
+
+# Queued commands in dispatch order. The active command, if any, is the front
+# entry and is reported with state ACTIVE.
+polymath_msgs/CortexCommandRecord[] queued
+
+# Id of the currently active command. Zero UUID when nothing is active.
+unique_identifier_msgs/UUID active_command_id
+
+# Number of commands remaining in the queue.
+uint32 number_commands_remaining

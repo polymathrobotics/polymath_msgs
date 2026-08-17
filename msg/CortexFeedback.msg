@@ -14,8 +14,11 @@ polymath_msgs/VehicleFeedback vehicle_feedback
 # Requires localization to be up to return useful data
 geographic_msgs/GeoPoseStamped current_pose
 
-# Number in queue that is currently running
+# DEPRECATED: use current_command_id. Historically always the front (0).
 uint32 current_command_index
+
+# Id of the currently active command. Zero UUID when nothing is active.
+unique_identifier_msgs/UUID current_command_id
 
 # Number of commands remaining in the queue
 uint32 number_commands_remaining
