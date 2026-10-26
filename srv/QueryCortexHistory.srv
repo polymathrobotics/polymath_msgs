@@ -1,0 +1,18 @@
+# QueryCortexHistory
+#
+# Returns terminal-state command records from Cortex's bounded history ring,
+# newest first, subject to the optional filters below.
+
+# Maximum number of records to return. Zero means no limit.
+uint32 max_count
+
+# Only return records completed at or after this time. Zero disables the filter.
+builtin_interfaces/Time since
+
+# Only return the record with this id. Zero UUID disables the filter.
+unique_identifier_msgs/UUID command_id
+
+---
+bool success
+string message
+polymath_msgs/CortexCommandRecord[] records

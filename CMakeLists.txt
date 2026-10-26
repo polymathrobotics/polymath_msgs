@@ -16,6 +16,7 @@ find_package(action_msgs REQUIRED)
 find_package(geographic_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(ros2_medkit_msgs REQUIRED)
+find_package(unique_identifier_msgs REQUIRED)
 
 set(dependencies
   std_msgs
@@ -26,11 +27,13 @@ set(dependencies
   geographic_msgs
   action_msgs
   ros2_medkit_msgs
+  unique_identifier_msgs
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   # Messages
   "msg/CortexCommand.msg"
+  "msg/CortexCommandRecord.msg"
   "msg/CortexFeedback.msg"
   "msg/CortexStatus.msg"
   "msg/FlowCommand.msg"
@@ -54,6 +57,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ListReferenceTargets.srv"
   "srv/ListVehicleOptions.srv"
   "srv/ModifyCortexQueue.srv"
+  "srv/QueryCortexHistory.srv"
+  "srv/QueryCortexQueue.srv"
   "srv/VehicleJointCommand.srv"
   DEPENDENCIES ${dependencies}
 )
