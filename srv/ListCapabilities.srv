@@ -1,0 +1,5 @@
+# ListCapabilities
+#
+# What this robot can do, with the params each capability takes.
+---
+polymath_msgs/CapabilityDescriptor[] capabilities

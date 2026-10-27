@@ -32,6 +32,12 @@ set(dependencies
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   # Messages
+  "msg/Capability.msg"
+  "msg/CapabilityDescriptor.msg"
+  "msg/CapabilityFeedback.msg"
+  "msg/CapabilityParam.msg"
+  "msg/CapabilityRecord.msg"
+  "msg/CapabilityResult.msg"
   "msg/CortexCommand.msg"
   "msg/CortexCommandRecord.msg"
   "msg/CortexFeedback.msg"
@@ -53,12 +59,15 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 
   # Services
   "srv/CommandCortexFlow.srv"
+  "srv/ListCapabilities.srv"
   "srv/ListPathLogicOptions.srv"
   "srv/ListReferenceTargets.srv"
   "srv/ListVehicleOptions.srv"
   "srv/ModifyCortexQueue.srv"
+  "srv/QueryCapabilityRecords.srv"
   "srv/QueryCortexHistory.srv"
   "srv/QueryCortexQueue.srv"
+  "srv/QueueCapabilities.srv"
   "srv/VehicleJointCommand.srv"
   DEPENDENCIES ${dependencies}
 )
