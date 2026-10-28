@@ -2,8 +2,8 @@
 Changelog for package polymath_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.20.0 (2026-10-28)
+-------------------
 * Goal ID and History Support (`#25 <https://github.com/polymathrobotics/polymath_msgs/issues/25>`_)
   Based on
   [Design](https://app.notion.com/library/recents?space=polymathrobotics&p=3abc0b1ac5fa808a9efdc4c98216f256&pm=s&pvs=140)
