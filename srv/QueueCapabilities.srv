@@ -1,0 +1,23 @@
+# QueueCapabilities
+#
+# Deferred: the answer arrives once every capability is queued or rejected, or after a timeout.
+# One request is in flight at a time. A request that arrives while another waits is answered
+# with success=false and "request already in flight". A PREEMPT request is the exception: it
+# rejects the waiting request, preempts, and proceeds.
+
+# Mode (Enum)
+#
+# ADD: add to the queue
+# PREEMPT: discard what is queued and running, then queue the request
+uint8 ADD=0
+uint8 PREEMPT=1
+uint8 mode
+
+polymath_msgs/Capability[] capabilities
+---
+# True when every capability was accepted.
+bool success
+string message
+
+# Aligned 1:1 with capabilities.
+polymath_msgs/CapabilityResult[] results

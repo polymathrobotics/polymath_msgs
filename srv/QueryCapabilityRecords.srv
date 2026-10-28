@@ -1,0 +1,22 @@
+# QueryCapabilityRecords
+#
+# Every capability record Cortex knows, queued, active and finished, in one list.
+# Newest first by queued time. Each record's `state` and `outcome` say where it is.
+
+uint8 QUEUED_BIT=1
+uint8 ACTIVE_BIT=2
+uint8 TERMINAL_BIT=4
+
+# Which states to return, as a mask of the bits above (bit = 1 << CapabilityRecord.state). 0 returns all.
+uint8 states
+
+# Maximum number of finished records to return. 0 means no limit. Queued and active records are always
+# returned. Finished records are also bounded by Cortex's history_depth.
+uint32 max_count
+
+# Only the record with this id. The nil UUID disables.
+unique_identifier_msgs/UUID capability_id
+---
+bool success
+string message
+polymath_msgs/CapabilityRecord[] records
