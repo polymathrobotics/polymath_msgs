@@ -2,6 +2,26 @@
 Changelog for package polymath_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* feat(polymath_msgs): add the capability messages and services (`#26 <https://github.com/polymathrobotics/polymath_msgs/issues/26>`_)
+  Add the capability messages and services for Cortex's capability
+  behavior tree.
+  Nothing existing changes, and no code uses them yet.
+  - Add `Capability`, `CapabilityParam`, `CapabilityDescriptor`,
+  `CapabilityResult`, `CapabilityRecord` and `CapabilityFeedback`.
+  - Add the services `QueueCapabilities` (answered once every capability
+  is queued or rejected), `ListCapabilities` and `QueryCapabilityRecords`.
+  - Carry units, limits and accepted values in `CapabilityParam`, so a
+  client can build a request from `ListCapabilities` alone.
+  - Follow `CortexCommandRecord` in `CapabilityRecord`, so tooling that
+  reads one reads the other.
+  ## Migration Guide
+  None.
+  ---
+  Part of polymath_core`#1633 <https://github.com/polymathrobotics/polymath_msgs/issues/1633>`_ and `#1258 <https://github.com/polymathrobotics/polymath_msgs/issues/1258>`_.
+* Contributors: Zeerek Ahmad
+
 0.20.0 (2026-10-28)
 -------------------
 * Goal ID and History Support (`#25 <https://github.com/polymathrobotics/polymath_msgs/issues/25>`_)
