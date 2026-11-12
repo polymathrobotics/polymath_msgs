@@ -2,8 +2,8 @@
 Changelog for package polymath_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.21.0 (2026-11-12)
+-------------------
 * feat(polymath_msgs): add the capability messages and services (`#26 <https://github.com/polymathrobotics/polymath_msgs/issues/26>`_)
   Add the capability messages and services for Cortex's capability
   behavior tree.
