@@ -8,5 +8,5 @@ string name
 # Severity of the worst active fault (ros2_medkit_msgs/msg/Fault SEVERITY_* values).
 uint8 severity
 
-# Individual active faults (verbatim from the fault manager), worst-first then by fault_code.
-ros2_medkit_msgs/Fault[] faults
+# Individual active faults, worst-first then by fault_code.
+ActiveFault[] faults

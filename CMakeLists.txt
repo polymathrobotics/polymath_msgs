@@ -32,6 +32,7 @@ set(dependencies
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   # Messages
+  "msg/ActiveFault.msg"
   "msg/Capability.msg"
   "msg/CapabilityDescriptor.msg"
   "msg/CapabilityFeedback.msg"
